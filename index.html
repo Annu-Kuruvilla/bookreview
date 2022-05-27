@@ -8,87 +8,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bookrivew</title>
 </head>
-<body>
-    <style>
+ <style>
         body{
             margin: 0;
             background-color: rgb(250, 164, 164);
         }
-    </style>
-    
+                   * {
+                 margin: 0;
+                 padding: 0;
+                }
+                .navbar{
+			display: flex;
+			align-items: left;
+			justify-content: left;
+			position: sticky;
+			top: 0;
+            left: 16px;
+			cursor: pointer;
+		}
 
-    </style>
-      
+		.background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
 
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
 
-                <img class="f5" src="f5.jpg" alt="f5" align="center"><br>
+		.logo {
+			display: flex;
+			justify-content: left;
+			align-items: left;
+		}
 
-    
-    <style>
-.f5 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 16px;
-  align-items: center;
+		.logo img {
+			width: 80px;
+			border-radius: 50%;
+		}
 
-}
-</style>
-   <h1>Famous Five</h1>
-   <style>
-       h1{
+		.nav-list li {
+			list-style: none;
+			padding: 20px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration:none;
+			color:cadetblue;
+		}
+
+		.nav-list li a:hover {
+			color: rgb(250, 164, 164);
+		}
+        .f5
+          {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 16px;
+            align-items: center;
+
+         }  
+
+            h1
+            {
            text-align: center;
            color: black;
            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-       }
-   </style>
-
-					<p>The Famous Five is a series of children's adventure novels and short stories written by English author Enid Blyton.
-                    The first book, Five on a Treasure Island, was published in 1942.
-                    The novels feature the adventures of a group of young children – Julian, Dick, Anne, Georgina (George) and her dog Timmy.
-				    The vast majority of the stories take place in the children's school holidays.
-                    Each time they meet they get caught up in an adventure, often involving criminals or lost treasure. 
-                    Sometimes the scene is set close to George's family home at Kirrin Cottage, such as the picturesque Kirrin Island, owned by George and her family in Kirrin Bay, George's own home and various other houses the children visit or stay in are hundreds of years old and often contain secret passages or smugglers' tunnels.
-                </p>
-           <style>
-               p{
+            }
+            p
+            {
                    text-align: center;
                    margin: 24px;
                    color: black;
                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                    font-size: 18px;
                }
-           </style>
-           <h1>Watch The Series</h1>
-           <a href="https://www.youtube.com/watch?v=s_ylFj1BMXI&list=PL0D6AAC2F5186592F"
-    <h1>About Author</h1>
-    <img src="enid.jpeg" class="center">
-					<p>Enid Mary Blyton (11 August 1897 – 28 November 1968) was an English children's writer, whose books have been worldwide bestsellers since the 1930s, selling more than 600 million copies. 
-                    Her books are still enormously popular and have been translated into 90 languages. 
-                    As of June 2018, Blyton held 4th place for the most translated author. 
-                    She wrote on a wide range of topics, including education, natural history, fantasy, mystery, and biblical narratives. 
-                    She is best remembered today for her Noddy, Famous Five, Secret Seven, the Five Find-Outers, and Malory Towers books.
-                    She felt she had a responsibility to provide her readers with a strong moral framework, so she encouraged them to support worthy causes.
-                    In particular, through the clubs she set up or supported, she encouraged and organized them to raise funds for animal and paediatric charities.
-
-               </p>
-               <style>
-                   .center{
+                .iframe-container
+              {
+                margin-left: 400px;
+                margin-right: 400px;
+              }
+                .center
+                   {
                        display: block;
                        margin-left: auto;
                        margin-right: auto;
                     
                    }
-               </style>
-               
-   <h1>More Books</h1><br>
-
-                 <a href ="https://www.enidblytonsociety.co.uk/noddy.php"><img src="noddy.jpeg" class="pic" width="280px" height="380px"><br></a> 
-                 <a href ="https://www.enidblytonsociety.co.uk/secret-seven.php"><img src="s7.jpg" class="pic" width="280px" height="380px"><br></a>
-                 <a href ="https://www.enidblytonsociety.co.uk/malory-towers.php"><img src="malory.jpg" class="pic" width="280px" height="380px" ><br></a>
-                 <a href="https://www.enidblytonsociety.co.uk/book-details.php?id=216"><img src="tree.jpeg" class="pic" width="280px" height="380px" ></a>
-                 <style>
-                     .pic:hover{
+                 .pic:hover
+                    {
                          position: relative;
                          height: auto;
                          display:flex;
@@ -108,9 +120,58 @@
 
                        }
 
-                 </style>
-                 
-              
+            </style>
+<body>
+   
+      <nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+                <img src="book.jpg">
+                <li><a href="#summary">SUMMARY</a></li>
+                <li><a href="#series">SERIES</a></li>
+                <li><a href="#author">ABOUT AUTHOR</a></li>
+                <li><a href="#more">MORE</a></li>
+            </ul>
+            </nav>
+           
+         <img class="f5" src="f5.jpg" alt="f5" align="center"><br>
+
+       
+
+   <h1 class="summary" id="summary">Famous Five</h1>
+  
+					<p>The Famous Five is a series of children's adventure novels and short stories written by English author Enid Blyton.
+                    The first book, Five on a Treasure Island, was published in 1942.
+                    The novels feature the adventures of a group of young children - Julian, Dick, Anne, Georgina (George) and her dog Timmy.
+				    The vast majority of the stories take place in the children's school holidays.
+                    Each time they meet they get caught up in an adventure, often involving criminals or lost treasure. 
+                    Sometimes the scene is set close to George's family home at Kirrin Cottage, such as the picturesque Kirrin Island, owned by George and her family in Kirrin Bay, George's own home and various other houses the children visit or stay in are hundreds of years old and often contain secret passages or smugglers' tunnels.
+                </p>
+                     <h1 class="series" id="series">Watch The Series</h1>
+          <div class="iframe-container"> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/s_ylFj1BMXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="center"></iframe>
+          </div>
+         
+         
+    <h1 class="author" id="author">About Author</h1>
+    <img src="enid.jpeg" class="center">
+					<p>Enid Mary Blyton (11 August 1897 - 28 November 1968) was an English children's writer, whose books have been worldwide bestsellers since the 1930s, selling more than 600 million copies. 
+                    Her books are still enormously popular and have been translated into 90 languages. 
+                    As of June 2018, Blyton held 4th place for the most translated author. 
+                    She wrote on a wide range of topics, including education, natural history, fantasy, mystery, and biblical narratives. 
+                    She is best remembered today for her Noddy, Famous Five, Secret Seven, the Five Find-Outers, and Malory Towers books.
+                    She felt she had a responsibility to provide her readers with a strong moral framework, so she encouraged them to support worthy causes.
+                    In particular, through the clubs she set up or supported, she encouraged and organized them to raise funds for animal and paediatric charities.
+
+               </p>
+                             
+   <h1 class="more" id="more">More Books</h1><br>
+
+                 <a href ="https://www.enidblytonsociety.co.uk/noddy.php"><img src="noddy.jpeg" class="pic" width="280px" height="380px"><br></a> 
+                 <a href ="https://www.enidblytonsociety.co.uk/secret-seven.php"><img src="s7.jpg" class="pic" width="280px" height="380px"><br></a>
+                 <a href ="https://www.enidblytonsociety.co.uk/malory-towers.php"><img src="malory.jpg" class="pic" width="280px" height="380px" ><br></a>
+                 <a href="https://www.enidblytonsociety.co.uk/book-details.php?id=216"><img src="tree.jpeg" class="pic" width="280px" height="380px" ></a>
+                              
 
 </body>
 </html>
