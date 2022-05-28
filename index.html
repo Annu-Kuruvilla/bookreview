@@ -9,28 +9,33 @@
     <title>bookrivew</title>
 </head>
  <style>
-        body{
+        body
+        {
             margin: 0;
             background-color: rgb(250, 164, 164);
         }
-                   * {
-                 margin: 0;
-                 padding: 0;
-                }
-                .navbar{
+        *
+         {
+            margin: 0;
+            padding: 0;
+         }
+         
+        .navbar
+        {
 			display: flex;
 			align-items: left;
 			justify-content: left;
 			position: sticky;
 			top: 0;
-            left: 16px;
+      left: 16px;
 			cursor: pointer;
+      
 		}
 
 		.background {
-			background: black;
+			background: rgb(248, 239, 239);
 			background-blend-mode: darken;
-			background-size: cover;
+			background-size: contain;
 		}
 
 		.nav-list {
@@ -57,12 +62,19 @@
 
 		.nav-list li a {
 			text-decoration:none;
-			color:cadetblue;
+			color:rgb(10, 10, 10);
 		}
 
 		.nav-list li a:hover {
-			color: rgb(250, 164, 164);
+			color: rgb(241, 128, 128);
 		}
+      .firstsection
+      {
+        background-color: white;
+        margin-top: -16px;
+        height: 750px;
+      }
+      
         .f5
           {
             display: block;
@@ -72,12 +84,19 @@
             align-items: center;
 
          }  
-
+         
+           .secondsection
+           {
+             text-align: right;
+             margin-top: -36px;
+           }
+          
             h1
             {
            text-align: center;
            color: black;
            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           font-size: 32px;
             }
             p
             {
@@ -97,12 +116,13 @@
                        display: block;
                        margin-left: auto;
                        margin-right: auto;
-                    
+                      
                    }
                  .pic:hover
                     {
                          position: relative;
-                         height: auto;
+                         height: 385px;
+                         width: auto;
                          display:flex;
                          z-index: 999;
                         
@@ -117,6 +137,7 @@
                            display: block;
                            margin-left: 24px;
                            margin-right: 24px;
+                  
 
                        }
 
@@ -133,29 +154,48 @@
                 <li><a href="#more">MORE</a></li>
             </ul>
             </nav>
-           
-         <img class="f5" src="f5.jpg" alt="f5" align="center"><br>
-
-       
-
-   <h1 class="summary" id="summary">Famous Five</h1>
+           <section class="firstsection">
+               <div class="box-main">
+     
+                <img class="f5" src="f5.jpg" alt="f5" align="center">
+ 
+                </div>
+           </section>
   
+ <section class="secondsection">
+   <div class="box-main">
+  
+   <br><br><h1 class="summary" id="summary"></h1>
+   <img src="f52.webp" width="600px" height="600px" align="left">
 					<p>The Famous Five is a series of children's adventure novels and short stories written by English author Enid Blyton.
                     The first book, Five on a Treasure Island, was published in 1942.
                     The novels feature the adventures of a group of young children - Julian, Dick, Anne, Georgina (George) and her dog Timmy.
 				    The vast majority of the stories take place in the children's school holidays.
                     Each time they meet they get caught up in an adventure, often involving criminals or lost treasure. 
-                    Sometimes the scene is set close to George's family home at Kirrin Cottage, such as the picturesque Kirrin Island, owned by George and her family in Kirrin Bay, George's own home and various other houses the children visit or stay in are hundreds of years old and often contain secret passages or smugglers' tunnels.
-                </p>
-                     <h1 class="series" id="series">Watch The Series</h1>
+                    Sometimes the scene is set close to George's family home at Kirrin Cottage, such as the picturesque Kirrin Island, owned by George and her family in Kirrin Bay, George's own home and various other houses the children visit or stay in are hundreds of years old and often contain secret passages or smugglers' tunnels.<br><br>
+                    The Five:
+                    Julian is the oldest of the five, cousin to George and elder brother to Dick and Anne. He is tall, strong and intelligent as well as caring, responsible and kind.<br> 
+                    Dick has a cheeky sense of humour, but is also dependable and kind in nature.Though inclined to tease his sister at times, Dick is, like Julian, very caring towards Anne and does his best to keep her cheered up when she gets upset. <br>
+                    Georgina is a tomboy, demanding that people call her George, and she cuts her hair very short and dresses like a boy. She is headstrong and courageous by nature and, like her father, scientist Quentin Kirrin, has a hot and fiery temper.<br>
+                    Anne is the youngest in the group, and generally takes care of the domestic duties during the Five's various camping holidays. As the youngest, she is more likely than the others to be frightened, and does not really enjoy the adventures as much as the others.She likes doing the domestic things such as planning, organizing and preparing meals, and keeping where they are staying clean and tidy, be it a cave, house, tent or caravan. <br>
+                    Timothy Alias Timmy is George's faithful dog. He is a large, brown mongrel with a long tail. George adopted him after finding him abandoned on the moors as a puppy. He is very friendly; he is clever, affectionate and loyal to the children and to George in particular; he provides physical protection for them many times. Timmy's presence is frequently given as the reason the children's parents allow them to wander unsupervised. <br>
+                    <a href="books.html">Click here to see the books in order</a>
+                </p> 
+   </div>
+ </section>
+      <section class="thirdsection">
+       <div class="box-main">
+         <h1 class="series" id="series">Watch The Series</h1><br>
           <div class="iframe-container"> 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/s_ylFj1BMXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="center"></iframe>
           </div>
-         
-         
-    <h1 class="author" id="author">About Author</h1>
-    <img src="enid.jpeg" class="center">
-					<p>Enid Mary Blyton (11 August 1897 - 28 November 1968) was an English children's writer, whose books have been worldwide bestsellers since the 1930s, selling more than 600 million copies. 
+         </div>
+      </section>
+         <section class="fourthsection">
+           <div class="box-main">
+              <br><br> <h1 class="author" id="author">About Author</h1><br>
+                <img src="enid.jpeg" class="center">
+					      <p>Enid Mary Blyton (11 August 1897 - 28 November 1968) was an English children's writer, whose books have been worldwide bestsellers since the 1930s, selling more than 600 million copies. 
                     Her books are still enormously popular and have been translated into 90 languages. 
                     As of June 2018, Blyton held 4th place for the most translated author. 
                     She wrote on a wide range of topics, including education, natural history, fantasy, mystery, and biblical narratives. 
@@ -164,14 +204,19 @@
                     In particular, through the clubs she set up or supported, she encouraged and organized them to raise funds for animal and paediatric charities.
 
                </p>
-                             
-   <h1 class="more" id="more">More Books</h1><br>
-
-                 <a href ="https://www.enidblytonsociety.co.uk/noddy.php"><img src="noddy.jpeg" class="pic" width="280px" height="380px"><br></a> 
+           </div>
+         </section>   
+         
+         <section class="fifthsection">
+           <div class="box-main">
+             
+            <h1 class="more" id="more">More Books</h1><br>
+                 <a href ="https://www.enidblytonsociety.co.uk/noddy.php"><img src="noddy.jpeg" class="pic" width="280px" height="380px" ><br></a> 
                  <a href ="https://www.enidblytonsociety.co.uk/secret-seven.php"><img src="s7.jpg" class="pic" width="280px" height="380px"><br></a>
                  <a href ="https://www.enidblytonsociety.co.uk/malory-towers.php"><img src="malory.jpg" class="pic" width="280px" height="380px" ><br></a>
                  <a href="https://www.enidblytonsociety.co.uk/book-details.php?id=216"><img src="tree.jpeg" class="pic" width="280px" height="380px" ></a>
-                              
+           </div>
+         </section>                     
 
 </body>
 </html>
