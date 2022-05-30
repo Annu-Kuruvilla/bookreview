@@ -127,18 +127,12 @@
                          z-index: 999;
                         
                      }
-                      .pic{
-    
-                          float: left;
-                          width: 20%;
-                          padding: 5px;
+                      .container{
+                         display: flex;                    
+                        justify-content: space-around        
                        }
-                       .pic{
-                           display: block;
-                           margin-left: 24px;
-                           margin-right: 24px;
-                  
-
+                       html{
+                         scroll-behavior: smooth;
                        }
 
             </style>
@@ -166,7 +160,7 @@
    <div class="box-main">
   
    <br><br><h1 class="summary" id="summary"></h1>
-   <img src="f52.webp" width="600px" height="600px" align="left">
+   <img src="f52.webp" width="600px" height="650px" align="left">
 					<p>The Famous Five is a series of children's adventure novels and short stories written by English author Enid Blyton.
                     The first book, Five on a Treasure Island, was published in 1942.
                     The novels feature the adventures of a group of young children - Julian, Dick, Anne, Georgina (George) and her dog Timmy.
@@ -185,7 +179,7 @@
  </section>
       <section class="thirdsection">
        <div class="box-main">
-         <h1 class="series" id="series">Watch The Series</h1><br>
+         <br><h1 class="series" id="series">Watch The Series</h1><br>
           <div class="iframe-container"> 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/s_ylFj1BMXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="center"></iframe>
           </div>
@@ -194,7 +188,7 @@
          <section class="fourthsection">
            <div class="box-main">
               <br><br> <h1 class="author" id="author">About Author</h1><br>
-                <img src="enid.jpeg" class="center">
+                <img src="enid.jpeg" class="center" align="center">
 					      <p>Enid Mary Blyton (11 August 1897 - 28 November 1968) was an English children's writer, whose books have been worldwide bestsellers since the 1930s, selling more than 600 million copies. 
                     Her books are still enormously popular and have been translated into 90 languages. 
                     As of June 2018, Blyton held 4th place for the most translated author. 
@@ -211,11 +205,13 @@
            <div class="box-main">
              
             <h1 class="more" id="more">More Books</h1><br>
+            <div class="container">
                  <a href ="https://www.enidblytonsociety.co.uk/noddy.php"><img src="noddy.jpeg" class="pic" width="280px" height="380px" ><br></a> 
                  <a href ="https://www.enidblytonsociety.co.uk/secret-seven.php"><img src="s7.jpg" class="pic" width="280px" height="380px"><br></a>
                  <a href ="https://www.enidblytonsociety.co.uk/malory-towers.php"><img src="malory.jpg" class="pic" width="280px" height="380px" ><br></a>
                  <a href="https://www.enidblytonsociety.co.uk/book-details.php?id=216"><img src="tree.jpeg" class="pic" width="280px" height="380px" ></a>
-           </div>
+          </div>
+         </div>
          </section>                     
 
 </body>
